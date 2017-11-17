@@ -105,7 +105,6 @@ public class MySSLSocketFactory extends SSLSocketFactory implements SybSocketFac
 
         SSLSocketFactory factory = (SSLSocketFactory)SSLSocketFactory.getDefault();
         Socket sslSocket = (SSLSocket) factory.createSocket(host, port);
-        sslSocket.setKeepAlive(true);
         return sslSocket;
     }
 
